@@ -2,4 +2,4 @@
 
 require_relative "../lib/articles_project"
 
-ArticlesProject::CLI.new("Josh's Articles").call
+GameProject::CLI.new("Josh's Articles").call

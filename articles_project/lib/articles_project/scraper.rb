@@ -8,15 +8,16 @@ class GameProject::Scraper
   def scrape_homepage
     doc = Nokogiri::HTML(open(self.home_page))
     doc.css(".itemList-item").each do |game_doc|
-      # binding.pry
+
       title = game_doc.css(".item-title a").text.strip
       #title
       rating = game_doc.css(".scoreBox-score").text
+      # binding.pry
+      url = game_doc.css(".item-title a").attribute("href").value
       GameProject::Game.new(title, rating)
 
       #rating
     end
-    binding.pry
   end
 
   def scrape

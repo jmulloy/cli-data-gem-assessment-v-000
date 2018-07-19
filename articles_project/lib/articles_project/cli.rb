@@ -13,11 +13,11 @@ class GameProject::CLI
   end
 
   def main_menu
-    puts "Type list for a list of articles"
+    puts "Type list for a list of games"
     puts "Type exit to exit program"
     input = gets.strip
     if input.downcase == "list"
-      list_articles
+      list_games
     elsif input.downcase == "exit"
       puts "Thank you for stopping by! Hope to see you soon!"
     else
@@ -26,12 +26,17 @@ class GameProject::CLI
     end
   end
 
-  def list_articles
+  def list_games
     #itterate through an array or article objects and list their name
     #1. Halo Infinite
     # 2. halo comic
     # 3. HCS recap
-    puts "listing articles"
+    puts "listing games"
+    games = GameProject::Game.all
+    games.each do |game|
+      puts "#{game.title} - #{game.rating}" 
+
+    end
   end
 
   def invalid
