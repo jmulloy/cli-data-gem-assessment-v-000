@@ -1,17 +1,15 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "project_name/version"
+# require "articles_project/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "project_name"
-  spec.version       = ProjectName::VERSION
+  spec.name          = "articles_project"
+  spec.version       = "0.1.0"
   spec.authors       = ["'Josh Mulloy'"]
   spec.email         = ["'joshmulloy1@gmail.com'"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Artcile cli for Halo"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

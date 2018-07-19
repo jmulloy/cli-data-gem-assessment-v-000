@@ -2,11 +2,4 @@
 
 require_relative "../lib/articles_project"
 
-ArticlesProject::CLI.new("articles_project")
-
-
-
-
-# #!/usr/bin/env ruby  
-# require_relative "../lib/railtrails"  
-# RailTrails::Cli.new("RailTrails").welcome
+ArticlesProject::CLI.new("Josh's Articles").call
