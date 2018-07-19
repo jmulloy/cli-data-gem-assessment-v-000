@@ -1,4 +1,4 @@
-class ArticlesProject::CLI
+class GameProject::CLI
   attr_accessor :name
 
   def initialize(name)
@@ -7,7 +7,7 @@ class ArticlesProject::CLI
 
   def call
     puts "loading..."
-    ArticlesProject::Scraper.new("http://www.ign.com/reviews/games").scrape
+    GameProject::Scraper.new("http://www.ign.com/reviews/games").scrape
     puts "Welcome to #{self.name}"
     main_menu
   end

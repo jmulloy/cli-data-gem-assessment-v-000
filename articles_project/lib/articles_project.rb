@@ -6,7 +6,7 @@ require "open-uri"
 ####NAMESPACE MODULE###
 
 
-module ArticlesProject
+module GameProject
   # Your code goes here...
 end
 
@@ -14,6 +14,6 @@ end
 ##REQUIRED FILES###
 
 require_relative "./articles_project/version"
-require_relative "./articles_project/article"
+require_relative "./articles_project/game"
 require_relative "./articles_project/scraper"
 require_relative "./articles_project/cli"

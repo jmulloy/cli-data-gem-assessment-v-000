@@ -1,13 +1,16 @@
-class ArticlesProject::Article
+class GameProject::Game
   #what attributes will an article have
-  attr_accessor :name, :url, :information
+  attr_accessor :title, :rating, :description
 
   @@all = []
  #new which leads to initialize which leads to unsaved or not stored
-  def initialize(hash)
-    hash.each do |key, value|
-      self.send("#{key}w", value)
-    end
+  def initialize(title, rating)
+    @title = title
+    @rating = rating
+    self.save
+    # hash.each do |key, value|
+    #   self.send("#{key}w", value)
+    # end
   end
 
   def self.all
