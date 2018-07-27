@@ -1,8 +1,6 @@
-# ProjectName
+# GameProject
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/project_name`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -14,15 +12,26 @@ gem 'project_name'
 
 And then execute:
 
-    $ bundle
+  cd game_project
+
 
 Or install it yourself as:
 
-    $ gem install project_name
+    $ gem install game_project
 
 ## Usage
 
-TODO: Write usage instructions here
+to Start using the program. Please run the executable file of ruby bin/game_project
+
+You will then be directed to use 2 commands to either continue to use the program or to simply exit. Once a command has been selected. You will be prompted in  one of 2 ways.
+
+1. You will receive a list asking for a specific input to read more about the information included in the file (your choices are specific to the numbers 1-25 in reference to user input.)
+
+  After your selection has been made you will receive the verdict of the overall review for the selection you chose. If you care to read more, you will also be provided with a direct link to the read more about the selection you made.
+
+or
+
+2. You will exit the program and be returned back to the starting point within the file.
 
 ## Development
 

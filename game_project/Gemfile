@@ -6,3 +6,8 @@ gem "pry"
 gem "nokogiri"
 # Specify your gem's dependencies in project_name.gemspec
 gemspec
+
+
+# ```ruby
+# gem 'project_name'
+# ```

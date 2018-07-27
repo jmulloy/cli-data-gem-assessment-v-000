@@ -36,9 +36,6 @@ class GameProject::CLI
     games = GameProject::Game.all
     games.each.with_index(1) do |game, number|
       puts "#{number}. #{game.title} - #{game.rating}"
-      # @@all.each.with_index(1) {|title, rating| puts "#{rating}. #{title}"}
-
-      # binding.pry
     end
     puts "Please select a number for which game you would like to see"
     input = gets.strip

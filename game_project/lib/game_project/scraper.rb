@@ -16,6 +16,7 @@ class GameProject::Scraper
       url = game_doc.css(".item-title a").attribute("href").value
 
       GameProject::Game.new(title, rating, url)
+      #ADDED COMMENT
 
 
     end

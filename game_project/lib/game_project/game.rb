@@ -1,5 +1,6 @@
+
 class GameProject::Game
-  #what attributes will an article have
+  #what attributes will an game have
   attr_accessor :title, :rating, :description, :url, :verdict
 
   @@all = []
@@ -22,17 +23,26 @@ class GameProject::Game
     self.class.all.push(self)
   end
  #create means a stored object (orsaved)
-  def self.create(hash)
-    article = self.new(hash)
-    article.save
-    article
-  end
+  # def self.create(hash)
+  #   binding.pry
+  #   article = self.new(hash)
+  #   article.save
+  #   article
+  #
+  # end
 
-  #will accepr an array of hashes of attributes of objects
+  #will accept an array of hashes of attributes of objects
   #{name: "halo Infinite", url: "https: i have no idea.com"}
-  def self.create_from_collection(array)
-    array.each do |hash|
-      self.create(hash)
+  # def self.create_from_collection(array)
+  #   array.each do |hash|
+  #     self.create(hash)
+  #   end
+  # end
+
+  def self.first_ten
+      games = GameProject::Game.all
+      games[0 .. 9]
+      # binding.pry
     end
-  end
+
 end

@@ -1,5 +1,0 @@
-#!/usr/bin/env ruby
-
-require_relative "../lib/articles_project"
-
-GameProject::CLI.new("Josh's Articles").call
